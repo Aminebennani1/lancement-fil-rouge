@@ -1,6 +1,21 @@
 @startuml
-:User: --> (Use)
-"Main Admin" as Admin
-"Use the application" as (Use)
-Admin --> (Admin the application)
+left to right direction
+actor "admine" as fc
+rectangle admine {
+  usecase "accepter la demande" as UC1
+  usecase "modifier la demande" as UC2
+  usecase "anuler la demande" as UC3
+}
+actor "user" as gc
+rectangle user{
+  usecase "reserve la service" as UC4
+  usecase "choisir le temp" as UC5
+  usecase "anuler le reservation" as UC6
+}
+fc --> UC1
+fc --> UC2
+fc --> UC3
+gc --> UC4
+gc --> UC5
+gc --> UC6
 @enduml
