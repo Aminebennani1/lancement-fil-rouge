@@ -1,13 +1,13 @@
 @startuml
 left to right direction
 actor "admine" as fc
-rectangle admine {
+rectangle reservations {
   usecase "accepter la demande" as UC1
   usecase "modifier la demande" as UC2
   usecase "anuler la demande" as UC3
 }
 actor "user" as gc
-rectangle user{
+rectangle service{
   usecase "reserve la service" as UC4
   usecase "choisir le temp" as UC5
   usecase "anuler le reservation" as UC6
