@@ -2,15 +2,15 @@
 left to right direction
 actor "admine" as fc
 rectangle reservations {
-  usecase "accepter la demande" as UC1
-  usecase "modifier la demande" as UC2
-  usecase "anuler la demande" as UC3
+  usecase "Accepter la demande" as UC1
+  usecase "Modifier la demande" as UC2
+  usecase "Annuler la demande" as UC3
 }
-actor "user" as gc
+actor "client" as gc
 rectangle service{
-  usecase "reserve la service" as UC4
-  usecase "choisir le temp" as UC5
-  usecase "anuler le reservation" as UC6
+  usecase "Réserve le service" as UC4
+  usecase "Choisir le temps" as UC5
+  usecase "Annuler la réservation" as UC6
 }
 fc --> UC1
 fc --> UC2
