@@ -1,0 +1,12 @@
+@startuml
+left to right direction
+actor "admin" as fc
+rectangle reservations {
+  usecase "Accepter la demande" as UC1
+  usecase "Modifier la demande" as UC2
+  usecase "Annuler la demande" as UC3
+}
+fc -- UC1
+fc -- UC2
+fc -- UC3
+@enduml

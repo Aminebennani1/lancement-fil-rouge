@@ -1,0 +1,12 @@
+@startuml
+left to right direction
+actor "client" as fc
+rectangle service{
+  usecase "Réserve le service" as UC1
+  usecase "Choisir le temps" as UC2
+  usecase "Annuler la réservation" as UC3
+}
+fc -- UC1
+fc -- UC2
+fc -- UC3
+@enduml
