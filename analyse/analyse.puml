@@ -12,10 +12,10 @@ rectangle service{
   usecase "Choisir le temps" as UC5
   usecase "Annuler la réservation" as UC6
 }
-fc --> UC1
-fc --> UC2
-fc --> UC3
-gc --> UC4
-gc --> UC5
-gc --> UC6
+fc -- UC1
+fc -- UC2
+fc -- UC3
+gc -- UC4
+gc -- UC5
+gc -- UC6
 @enduml
